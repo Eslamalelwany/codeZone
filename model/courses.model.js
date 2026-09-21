@@ -15,3 +15,4 @@ const courseSchema = new mongoose.Schema({
 console.log(mongoose.model('codezone', courseSchema))
 
 module.exports = mongoose.model('course', courseSchema)
+
