@@ -1,0 +1,17 @@
+const mongoose = require('mongoose')
+
+
+const courseSchema = new mongoose.Schema({
+    title:{
+        type: String,
+        required:true,
+    },
+    price :{
+        type: Number,
+        required: true
+    }
+}) 
+
+console.log(mongoose.model('codezone', courseSchema))
+
+module.exports = mongoose.model('course', courseSchema)
